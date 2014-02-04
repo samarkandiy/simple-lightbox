@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <title>Simple Lightbox - CodePen</title>
+
+    <style>
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: sans-serif;
+}
+
+.content{
+  background: #eee;
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content h1{
+  padding-bottom: 20px;
+}
+
+.show-info{
+  background: #111;
+  color: #fff;
+  font-size: 25px;
+  width: 30px;
+  height: 30px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.info{
+  background: #eee;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 500px;
+  height: 530px;
+  display: none;
+}
+
+.info img{
+  max-width: 100%;
+}
+
+.info p{
+  font-size: 13px;
+  padding: 15px;
+}
+
+.info h2{
+  font-weight: normal;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+</style>
+
+  <script src="js/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="content">
+  <h1>Simple Lightbox</h1>
+  <p>Click the plus icon on the bottom-right corner of the page.</p>
+</div>
+<a class="show-info" href="#">+</a>
+<div class="info">
+  <img src="http://iweb.uz/wp-content/uploads/2012/07/registan3.jpg" alt="Registan Square" />
+  <h2>Registan</h2>
+  <p>The Registan was the heart of the ancient city of Samarkand of the Timurid dynasty, now in Uzbekistan. The name Rēgistan  means "Sandy place" or "desert" in Persian.</p>  
+</div>
+
+  <script src='http://codepen.io/assets/libs/fullpage/jquery.js'></script>
+
+  <script src="js/index.js"></script>
+
+</body>
+
+</html>
